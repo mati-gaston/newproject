@@ -17,9 +17,9 @@ function NavbarComponent() {
             <Nav.Link as={NavLink} to ='/'>Inicio</Nav.Link>
             <Nav.Link as={NavLink} to ='/'>Promos</Nav.Link>
             <NavDropdown title="Menú" id="basic-nav-dropdown">
-              <NavDropdown.Item as={NavLink} to ='/category/Hamburguesas'>Hamburguesas</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to ='/Category/Para-picar'> Para picar </NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to ='/category/Bebidas'>Bebidas</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to ='/category/veggie'>Hamburguesas Veggie</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to ='/Category/pollo'>Hamburguesas de Pollo </NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to ='/category/carne'>Hamburguesas de Carne</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item as={NavLink} to ='/category/Burguer del mes'>
                 Burguer del mes

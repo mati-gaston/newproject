@@ -14,3 +14,5 @@ const ItemDetail = ({ detalle }) => {
 
     )
 }
+export default ItemDetail
+

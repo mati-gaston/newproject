@@ -5,13 +5,13 @@ import ItemDetail from './ItemDetail';
 
 const ItemDetailContainer = () => {
   const [detalle, setDetalle] = useState({});
-  const { ItemId } = useParams();
+  const { itemId } = useParams();
 
   useEffect(() => {
-    getOneProduct(ItemId)
+    getOneProduct(itemId)
       .then((response) => setDetalle(response))
       .catch((error) => console.log(error));
-  }, [ItemId]);
+  }, [itemId]);
 
   return (
     <div>
