@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import  {CartProvider} from './context/CartContext';
+import Error from './components/Error';
 
 function App() {
   return (
@@ -12,8 +14,9 @@ function App() {
 
       <Routes>
         <Route path='/' element={<ItemListContainer greeting="Hamburgueseria Don Gregory" />} />
-        <Route path='/category/:categoryId' element={<ItemListContainer greeting="Estas en categoria" />} />
+        <Route path='/category/:categoryId' element={<ItemListContainer greeting="Estas en la categoria" />} />
         <Route path='/item/:itemId' element={<ItemDetailContainer />} />
+        <Route path='*' element={<Error/>} />
       </Routes>
     </BrowserRouter>
   )

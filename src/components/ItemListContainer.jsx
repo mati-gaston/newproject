@@ -21,7 +21,7 @@ const ItemListContainer = ({ greeting }) => {
 
   return (
     <div>
-      <h1>{greeting}</h1>
+      <h1 className="container text-center my-5">{greeting} {categoryId && <span style={{textTransform:"capitalize"}}>{categoryId}</span>}</h1>
       <ItemList data={data} />
     </div>
   );
