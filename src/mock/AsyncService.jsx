@@ -2,44 +2,70 @@ const productos =
    [
       {
          id: '01',
-         name: 'Hambur1',
+         name: 'Cheesy Beast',
          price: 9999,
          description: 'Hamburguesa doble carne, doble mix quesos',
          stock: '10',
          img: 'https://i.postimg.cc/7Z5bzmzG/hambur01.jpg',
-         category: 'carne'
+         category: 'carne',
+         promo: false
       }
       ,
 
       {
          id: '02',
-         name: 'Hambur2',
-         price: 10.999,
+         name: 'Bacon Lover',
+         price: 10999,
          description: 'Hamburguesa doble carne, doble queso y panceta',
          stock: '10',
          img: 'https://i.postimg.cc/QdvPNds9/hambur02.jpg',
-         category: 'carne'
+         category: 'carne',
+         promo: false
       },
 
       {
          id: '03',
-         name: 'Hambur3',
-         price: 10.599,
-         description: 'Hamburguesa simple pollo,queso, panceta y cebolla caramelizada',
+         name: 'Sweet Chicken',
+         price: 12999,
+         description: 'Hamburguesa pollo,queso, panceta y cebolla caramelizada',
          stock: '10',
          img: 'https://i.postimg.cc/vHx95Yft/hambur03.jpg',
-         category: 'pollo'
+         category: 'pollo',
+         promo: false
       },
 
       {
          id: '04',
-         name: 'Hambur4',
-         price: 10.599,
-         description: 'Hamburguesa vegana, pan rosa de remolacha, medallon de quinoa, arroz y lentejas. Tomates asados , lechuga , pesto y rucula',
+         name: 'Power Veggie',
+         price: 12999,
+         description: 'Medallon de quinoa, arroz y lentejas. Tomates asados y rucula',
          stock: '10',
          img: 'https://i.postimg.cc/Dz7T3cTp/hambur04.jpg',
-         category: 'veggie'
-      }
+         category: 'veggie',
+         promo: false
+      },
+
+      {
+    id: '05',
+    name: 'Promo x2 Bacon Lover',
+    price: 18999,
+    description: '2 Hamburguesas Bacon Lover al mejor precio',
+    stock: '5',
+    img: 'https://i.postimg.cc/QdvPNds9/hambur02.jpg',
+    category: 'promo',
+    promo: true
+  },
+
+  {
+  id: '06',
+  name: 'Promo x2 Cheesy Beast',
+  price: 17999,
+  description: '2 Hamburguesas Cheesy Beast a precio especial',
+  stock: '5',
+  img: 'https://i.postimg.cc/7Z5bzmzG/hambur01.jpg',
+  category: 'promo',
+  promo: true
+}
 
    ]
 let error = false
@@ -51,7 +77,7 @@ export const getProducts = () => {
          } else {
             reject('Hubo un error, intente más tarde')
          }
-      }, 2000)
+      }, 1500)
    })
 }
 
@@ -65,6 +91,6 @@ export const getOneProduct = (id) => {
          } else {
             reject('Hubo un error, intente más tarde')
          }
-      }, 2000)
+      }, 1500)
    })
 }

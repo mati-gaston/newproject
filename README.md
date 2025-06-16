@@ -1,12 +1,26 @@
-# React + Vite
+# Burguer App 🍔🍔🍔
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es un e-commerce de una hamburgueseria realizado como entrega final de un curso React JS.
 
-Currently, two official plugins are available:
+![app](/public/flex-app-readme.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Instalacion ⚙️
 
-## Expanding the ESLint configuration
+1. Clone el repositorio
+2. Ingrese el comando `cd newproject` para moverse a la carpeta del proyecto
+3. Instalar dependencias con el comando `npm install`
+4. Para levantar la aplicacion en el servidor local ejecute el comando `npm run dev`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Version host 💻
+
+Si desea ver el proyecto online puede ingresar al siguiente link [Burguer App] ()
+
+
+### Librerias utilizadas 📖
+
+- [React Router Dom](https://react-bootstrap.netlify.app/) : Utilizada para la navegacion de rutas 
+- [React Bootstrap](https://react-bootstrap.netlify.app/) :  Uitlizada para el styling de la app
+- [Firebase](https://react-bootstrap.netlify.app/) : Utilizada como base de datos 
+
+
+Desarrollado por Matias Caravario
